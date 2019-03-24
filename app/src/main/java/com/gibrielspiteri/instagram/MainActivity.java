@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
     private File photoFile;
     private EditText etDescription;
-    private Button btnPhoto, btnSubmit;
+    private Button btnPhoto, btnSubmit, btnLogout;
     private ImageView ivPhoto;
 
     @Override
@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         etDescription = findViewById(R.id.etDescription);
         btnPhoto = findViewById(R.id.btnPhoto);
         btnSubmit = findViewById(R.id.btnSubmit);
+        btnLogout = findViewById(R.id.btnLogout);
         ivPhoto = findViewById(R.id.ivPhoto);
 
         //queryPosts();
@@ -69,6 +70,19 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
                 savePost(desc, user, photoFile);
+            }
+        });
+        btnLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Log the user out
+                Log.d(TAG, "Logged out");
+                Toast.makeText(MainActivity.this, "See you next time!", Toast.LENGTH_SHORT).show();
+                ParseUser.logOut();
+                //Redirect to login page
+                Intent i = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(i);
+                finish();
             }
         });
     }
