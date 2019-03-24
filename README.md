@@ -33,9 +33,6 @@ Here's a walkthrough of implemented user stories:
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
-## Notes
-
-I tried messing around with the toolbar but had difficulties so I decided to scrap it.
 
 ## Open-source libraries used
 
