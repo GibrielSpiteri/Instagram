@@ -1,8 +1,6 @@
 # Project 3 - *Mock-Instagram*
 
-**Mock-Instagram** is a photo sharing app similar to Instagram but using Parse as its backend.
-
-Time spent: **X** hours spent in total
+**Mock-Instagram** is a photo sharing app similar to Instagram, created using Parse as its backend.
 
 ## User Stories
 
@@ -16,12 +14,6 @@ The following **required** functionality is completed:
 The following **optional** features are implemented:
 
 - [x] User sees app icon in home screen and styled bottom navigation view
-- [ ] Style the feed to look like the real Instagram feed.
-- [ ] After the user submits a new post, show an indeterminate progress bar while the post is being uploaded to Parse.
-
-The following **additional** features are implemented:
-
-- [ ] List anything else that you can get done to improve the app functionality!
 
 ## Video Walkthrough
 
@@ -41,7 +33,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## License
 
-    Copyright [2019] [Gibriel Spiteri]
+    Copyright 2019 Gibriel Spiteri
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
